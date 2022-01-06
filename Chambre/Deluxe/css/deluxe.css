@@ -1,0 +1,277 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
+    --clr-dore: #af936c;
+    --clr-turquoise: #03989e;
+
+}
+/*
+=============== 
+Global css
+===============
+*/
+*{
+    font-family: 'Abhaya Libre', serif;
+}
+
+/*
+=============== 
+Animation
+===============
+*/
+
+
+/*
+=============== 
+Section ...
+===============
+*/
+
+/*Généralités*/
+main a{ 
+    text-decoration:none;
+    color: var(--clr-white);
+}
+
+main h1{
+    font-size: calc(3rem + 0.7vw);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+main h2{
+    font-size: calc(2rem + 0.7vw);
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+main h3{
+    font-size: calc(1rem + 0.7vw);
+    text-align: center;
+    margin: 0.3em auto;
+}
+
+main p{
+    font-size: calc(0.6rem + 0.7vw);
+}
+
+main li{
+    font-size: calc(0.6rem + 0.7vw);
+    list-style: inside;
+}
+
+/*Présentation chambre*/
+.presentation{
+    padding: 0 15%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+/*Tarif chambre*/
+span.prix{
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*Carrousel*/
+.carrousel{ 
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.imageGauche{
+    width: 80%;
+    display: flex;
+}
+
+.gallerie{ 
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallerie img{ 
+    display: flex;
+    border: 2px solid; 
+    width: 13em;
+}
+
+/*Bloc équipement-bouton CTA*/
+.equipement-bouton{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+/*Equipement chambre*/
+.equipement{
+    width: 80vw;
+    height: 15vh;
+    border: solid 1px black;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: column;
+}
+
+.item-equipement{
+    display: flex;
+    width: 25%;
+    height: 25%;
+    padding: 5px 0;
+}
+
+/* Bouton CTA réservation */
+.bouton-reserver{
+    background-color: var(--clr-turquoise);
+    width: max-content;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 10vh;
+    font-size: calc(2rem + 0.7vw);
+}
+
+/* Bloc maillage interne */
+.autres-chambres{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.carte1{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.vignette{
+    display: flex;
+    width: 65%;
+    align-self: center;
+}
+
+.bouton-more{
+    display: flex;
+    background-color: var(--clr-turquoise);
+    width:max-content;
+    padding: 5px;
+    border-radius: 10px;
+    margin:auto;
+}
+
+
+/*
+=============== 
+Responsive ...
+===============
+*/
+
+@media screen and (max-width: 1024px){
+	.carrousel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imageGauche{
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .gallerie{ 
+        width: 100%;
+        margin-top: 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .gallerie img{ 
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid; 
+        margin: 0 0.8%;
+    }
+
+    .equipement{
+        width: 95%;
+        height: 15vh;
+        border: solid 1px black;
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        flex-direction: column;
+       margin-bottom: 3vh;
+    }
+
+    .item-equipement{
+        display: flex;
+        width: 30%;
+        height: 25%;
+        padding: 5px 0;
+    }
+}
+
+@media screen and (max-width: 650px){
+	img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .carrousel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imageGauche{
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .gallerie{ 
+        width: 100%;
+        margin-top: 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .gallerie img{ 
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid;
+        margin: 0 0.8%;
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 576px){    
+    .bouton-reserver {
+        font-size: calc(1rem + 0.7vw);
+    }
+}

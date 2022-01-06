@@ -1,0 +1,82 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+/*  color: var(--clr-primary); */
+:root {
+    --clr-white: #ffffff;
+    --clr-black: #000000;
+    --clr-grey: #e7e7e7;
+    --clr-dropMenu: #030303;
+    --clr-dore: #af936c;
+    --clr-turquoise: #03989e;
+
+}
+/*
+=============== 
+Global css
+===============
+*/
+*{
+    font-family: 'Abhaya Libre', serif;
+}
+
+main{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*
+=============== 
+Animation
+===============
+*/
+
+/*
+=============== 
+Section ...
+===============
+*/
+main h1{
+    font-size: calc(3rem + 0.7vw);
+    text-align: center;
+    margin: 1em 15%;
+}
+
+main h2{
+    font-size: calc(2rem + 0.7vw);
+    margin: 0.5em 15%;
+    padding-left: 0.2em;
+}
+
+main h3{
+    font-size: calc(1rem + 0.7vw);
+    margin: 0.5em 15%;
+    padding-left: 0.4em;
+}
+
+main p{
+    font-size: calc(0.6rem + 0.7vw);
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: justify;
+    padding: 0.5em;
+    line-height: normal;
+}
+
+main ul{
+    font-size: calc(0.6rem + 0.7vw);
+    line-height: normal;
+    list-style: inside;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 2em;
+}

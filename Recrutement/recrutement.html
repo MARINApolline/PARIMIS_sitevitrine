@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recrutement | Hôtel Parimis</title>
+    <meta name="description" content="Notre hôtel recrute en continu des nouveaux talents pour servir ses clients au mieux toute l'année.">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="recrutement.css">
+    <link rel="stylesheet" href="../index/nav-footer/style.css">
+    <link rel="shortcut icon" href="../index/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
+</head>
+<body>
+
+<!-- =============== 
+    Section Navbar
+    ===============-->
+    <!-- top -->
+    <section class="topBtn">
+        <a href="#header"><i class="fas fa-chevron-up"></i></a>
+    </section>
+    <header id="header">
+        
+        <div class="logo">
+            <a href="../index.html">
+                <h1>HOTEL PARIMIS</h1>
+                <h2>PARIS</h2>
+            </a>
+        </div>
+        <ul class="lienNav">
+            <li><a href="../Chambre/Catégorie/chambres.html">CHAMBRES</a></li>
+            <li><a href="../Restaurant/restaurant.html">RESTAURANT</a></li>
+            <li><a href="../Spa/spa.html">SPA & SOINS</a></li>
+            <li><a href="../Actualite/actualite.html">ACTUALITÉS</a></li>
+            <li><a href="../Evenement/evenement.html">ÉVÉNEMENTS</a></li>
+            <li><a href="../Contact/contacts.html">CONTACT</a></li>
+            <li><a href="../Reservation/reservation.html">RÉSERVATION</a></li>
+        </ul>
+        <div class="autreNav">
+            <div class="lang">
+                <span><a href="#">FR</a></span>
+                <span>|</span>
+                <span><a href="#">EN</a></span>
+            </div>
+            <div class="panier">
+                <a href="../Panier/panier.html">MON PANIER <i class="fas fa-store-alt"></i></a>
+            </div>
+            <div class="recherche">
+                <input type="search" placeholder="Recherche">
+            </div>
+    
+        </div>
+
+        <!-- MENU HUMBERGER -->
+        <i class="fas fa-bars" id="openMenu"></i>
+       
+    </header>
+    <!-- DROP MENU -->
+    <section id="menuBurger">
+         <div class="dropMenu">
+            <i class="far fa-times-circle" id="closeMenu"></i>
+
+            <ul class="itemDropMenu">
+                <li><a href="../Chambre/Catégorie/chambres.html">CHAMBRES</a></li>
+                <li><a href="../Restaurant/restaurant.html">RESTAURANT</a></li>
+                <li><a href="../Spa/spa.html">SPA & FITNESS</a></li>
+                <li><a href="../Actualite/actualite.html">ACTUALITÉS</a></li>
+                <li><a href="../Evenement/evenement.html">ÉVÉNEMENTS</a></li>
+                <li><a href="../Contact/contacts.html">CONTACT</a></li>
+                <li><a href="../Reservation/reservation.html">RÉSERVATION</a></li>
+            </ul> 
+        </div>
+    </section>
+
+    <!-- =============== 
+        Section Main
+        ===============-->
+        <main>
+            <h1 class="titreFormRecrutement">FORMULAIRE DE RECRUTEMENT</h1>
+    
+            <form action="GET" class="formRecrutement">
+                <div class="flex">
+                    <div class="nomRecrutement">
+                        <label for="FnomRecrutement">Nom : *</label>
+                        <input type="text" name="FnomRecrutement" id="FnomRecrutement" required>
+                    </div>
+                    <div class="prenomRecrutement">
+                        <label for="FprenomRecrutement">Prénom : *</label>
+                        <input type="text" name="FprenomRecrutement" id="FprenomRecrutement" required>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="emailRecrutement">
+                        <label for="FemailRecrutement">Email : *</label>
+                        <input type="email" name="FemailRecrutement" id="FemailRecrutement" required>
+                    </div>
+                    <div class="telRecrutement">
+                        <label for="FtelRecrutement">Téléphone : *</label>
+                        <input type="tel" name="FtelRecrutement" id="FtelRecrutement" required>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="nbPersonne">
+                        <label for="FpaysRecrutement">Pays : *</label>
+                        <select id="FpaysRecrutement" name="FpaysRecrutement" required>
+                            <option value="GCQ">France</option>
+                            <option value="GC">Japon</option>
+                        </select>
+                    </div>
+                    <div class="gammeRecrutement">
+                        <label for="chambre">Poste: *</label>
+                        <select id="chambre" name="chambre" required>
+                            <option value="GCQ">Intégrateur web</option>
+                            <option value="GC">Front-end Developer</option>
+                            <option value="GD">Back-end Developer</option>
+                            <option value="GS">Stage</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="dateArriveRecrutement">
+                        <label for="FcvRecrutement">CV : *</label>
+                        <input type="file" name="FcvRecrutement" id="FcvRecrutement" class="file" required>
+                    </div>
+                    <div class="dateDepartRecrutement">
+                        <label for="FlmRecrutement">Lettre de motivation : *</label>
+                        <input type="file" name="FlmRecrutement" id="FlmRecrutement" class="file" required>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="ta">
+                        <label for="FtaRecrutement">Message : *</label>
+                        <textarea name="FtaRecrutement" id="taRecrutement" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btnFormRecrutement">Envoyer</button>
+            </form>
+        </main>
+
+<!-- =============== 
+        Section Footer
+        ===============-->
+    <footer class="footer">
+        <div class="lienFooter">
+            <ul class="itemLienFooter">
+                <li><a href="../Recrutement/recrutement.html">Recrutement</a></li> 
+                <li><a href="../Press/press.html">Presse</a></li>
+                <li><a href="../Avis/avis.html">Avis</a></li>
+                <li><a href="../Presentation/presentation.html">Qui sommes-nous ?</a></li>
+                <li><a href="../PlanSite/plansite.html">Plan du site</a></li>
+                <li><a href="../Acces/acces.html">Accès</a></li>
+            </ul>
+        </div>
+        <div class="logoPartageFooter">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.tripadvisor.com/"><i class="fab fa-tripadvisor"></i></a>
+        </div>
+        
+        <p>HOTEL PARIMIS PARIS | 1 avenue Montaigne, 75008 Paris | RESERVATION : +33 404404 </p>
+        <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="../Mentions-légales/mentions-legales.html">Mentions légales</a> <a href="../CGV/cgv.html"> CGV</a><a href="javascript:window.print()"><i
+            class="fas fa-print"></i></a></p>
+        
+    </footer>
+    
+        <script src="../index/nav-footer/menu.js"></script>
+        <script src="recrutement.js"></script>
+</body>
+</html>

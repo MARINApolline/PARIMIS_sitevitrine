@@ -1,0 +1,5 @@
+User-agent:*
+Disallow:/Panier/
+Disallow:/Reservation/
+
+sitemap: ma-devweb.alwaysdata.net/sitemap.xml

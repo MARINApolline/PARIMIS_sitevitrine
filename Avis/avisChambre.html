@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avis clients chambres et suites | Hôtel Parimis</title>
+    <meta name="description" content="Consultez les avis de nos clients ayant séjourné dans nos chambres et suites.">
+    <link rel="shortcut icon" href="../index/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="avis.css">
+    <link rel="stylesheet" href="../index/nav-footer/style.css">
+</head>
+
+<body>
+    <!-- =============== 
+    Section Navbar
+    ===============-->
+    <!-- top -->
+    <section class="topBtn">
+        <a href="#header"><i class="fas fa-chevron-up"></i></a>
+    </section>
+    <header id="header">
+        
+        <div class="logo">
+            <a href="../index.html">
+                <h1>HOTEL PARIMIS</h1>
+                <h2>PARIS</h2>
+            </a>
+        </div>
+        <ul class="lienNav">
+            <li><a href="../Chambre/Catégorie/chambres.html">CHAMBRES</a></li>
+            <li><a href="../Restaurant/restaurant.html">RESTAURANT</a></li>
+            <li><a href="../Spa/spa.html">SPA & SOINS</a></li>
+            <li><a href="../Actualite/actualite.html">ACTUALITÉS</a></li>
+            <li><a href="../Evenement/evenement.html">ÉVÉNEMENTS</a></li>
+            <li><a href="../Contact/contacts.html">CONTACT</a></li>
+            <li><a href="../Reservation/reservation.html">RÉSERVATION</a></li>
+        </ul>
+        <div class="autreNav">
+            <div class="lang">
+                <span><a href="#">FR</a></span>
+                <span>|</span>
+                <span><a href="#">EN</a></span>
+            </div>
+            <div class="panier">
+                <a href="../Panier/panier.html">MON PANIER <i class="fas fa-store-alt"></i></a>
+            </div>
+            <div class="recherche">
+                <input type="search" placeholder="Recherche">
+            </div>
+    
+        </div>
+
+        <!-- MENU HUMBERGER -->
+        <i class="fas fa-bars" id="openMenu"></i>
+       
+    </header>
+    <!-- DROP MENU -->
+    <section id="menuBurger">
+         <div class="dropMenu">
+            <i class="far fa-times-circle" id="closeMenu"></i>
+
+            <ul class="itemDropMenu">
+                <li><a href="../Chambre/Catégorie/chambres.html">CHAMBRES</a></li>
+                <li><a href="../Restaurant/restaurant.html">RESTAURANT</a></li>
+                <li><a href="../Spa/spa.html">SPA & SOINS</a></li>
+                <li><a href="../Actualite/actualite.html">ACTUALITÉS</a></li>
+                <li><a href="../Evenement/evenement.html">ÉVÉNEMENTS</a></li>
+                <li><a href="../Contact/contacts.html">CONTACT</a></li>
+                <li><a href="../Reservation/reservation.html">RÉSERVATION</a></li>
+            </ul> 
+        </div>
+    </section>
+    <!-- =============== 
+    Section Main Avis
+    ===============-->
+    <main>
+        <section class="avis">
+            <section class="addAvis">
+                <h2><u>Laissez votre avis</u></h2>
+                <div class="inputAvisPrenom">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom">
+                </div>
+                <div class="inputAvisTitre">
+                    <label for="titreCommentaire">Titre commentaire : </label>
+                    <input type="text" name="titreCommentaire" id="titreCommentaire">
+                </div>
+
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="textareaAvis">
+                    <label for="taAvis">Votre avis :</label>
+                    <textarea name="taAvis" id="taAvis"></textarea>
+                </div>
+                <button class="btnAvis" type="submit">Envoyer</button>
+            </section>
+            <section class="listeAvis">
+                <h2><u>Avis précédents :</u></h2>
+                <div class="lienAvisPrecedent">
+                    <a href="avis.html">Général</a>
+                    <a href="avisChambre.html">Chambre</a>
+                    <a href="avisRestaurant.html">Restaurant</a>
+                    <a href="avisSoins.html">Soins</a>
+                </div>
+                <div class="itemListeAvis">
+                    <div class="infoItemListeAvis">
+                        <span class="infoItemListeAvisPrenom">Duchesse Pompon</span>
+                        <span class="infoItemListeAvisPrenom">Une chambre digne d'une duchesse !</span>
+                        <span>
+                            <i class="fas fa-star listeAvisColor"></i>
+                            <i class="fas fa-star listeAvisColor"></i>
+                            <i class="fas fa-star listeAvisColor"></i>
+                            <i class="fas fa-star listeAvisColor"></i>
+                            <i class="fas fa-star listeAvisColor"></i>
+                        </span>
+                    </div>
+                    <p>J'ai choisi la chambre Deluxe et c'était très dur de la quitter. 
+                        Spacieuse, une décoration raffinée, des draps de soie d'une douceur sans pareille.
+                        La prochaine fois, je tenterai la suite Deluxe parce qu'il y a une terrasse donnant sur la Tour Eiffel!</p>
+                </div>
+
+            </section>
+        </section>
+    </main>
+    <!-- =============== 
+        Section Footer
+        ===============-->
+
+        <footer class="footer">
+            <div class="lienFooter">
+                <ul class="itemLienFooter">
+                    <li><a href="../Recrutement/recrutement.html">Recrutement</a></li> 
+                    <li><a href="../Press/press.html">Presse</a></li>
+                    <li><a href="../Avis/avis.html">Avis</a></li>
+                    <li><a href="../Presentation/presentation.html">Qui sommes-nous ?</a></li>
+                    <li><a href="../PlanSite/plansite.html">Plan du site</a></li>
+                    <li><a href="../Acces/acces.html">Accès</a></li>
+                </ul>
+            </div>
+            <div class="logoPartageFooter">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.tripadvisor.com/"><i class="fab fa-tripadvisor"></i></a>
+            </div>
+            
+            <p>HOTEL PARIMIS PARIS | 1 avenue Montaigne, 75008 Paris | RESERVATION : +33 404404 </p>
+            <p class="legal">@2021 HOTEL PARIMIS PARIS | <a href="../Mentions-légales/mentions-legales.html">Mentions légales</a> <a href="../CGV/cgv.html"> CGV</a><a href="javascript:window.print()"><i
+                class="fas fa-print"></i></a></p>
+            
+        </footer>
+
+    <script src="/index/nav-footer/menu.js"></script>
+
+</body>
+</html>
